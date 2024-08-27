@@ -10,10 +10,10 @@
     <header>
         <nav id="menu">
             <ul>
-                <li><a href="#" onclick="navigate('home')">Home</a></li>
-                <li><a href="#" onclick="navigate('sobre')">Sobre</a></li>
-                <li><a href="#" onclick="navigate('servicos')">Serviços</a></li>
-                <li><a href="#" onclick="navigate('contato')">Contato</a></li>
+                <li><a id="link" href="#" onclick="navigate('home')">Home</a></li>
+                <li><a id="link" href="#" onclick="navigate('sobre')">Sobre</a></li>
+                <li><a id="link" href="#" onclick="navigate('servicos')">Serviços</a></li>
+                <li><a id="link" href="#" onclick="navigate('contato')">Contato</a></li>
             </ul>
         </nav>
         <button id="menu-toggle">Menu</button>
@@ -34,7 +34,24 @@
         </section>
         <section id="contato">
             <h2>Contato</h2>
-            <p>FORMULARIO</p>
+            <form id="formularioContato">
+                <label for="nome">Nome:</label>
+                <br>
+                <input id="nome" type="text" name="nome">
+                <br><br>
+                <label for="email">E-mail:</label>
+                <br>
+                <input id="email" type="email" name="email">
+                <br><br>
+                <label for="phone">Telefone:</label>
+                <br>
+                <input id="phone" type="phone" name="phone">
+                <br><br>
+                <button type="button" onclick="submit()">Enviar</button>
+            </form>
+            <div id="tabelaContato">
+                
+            </div>
         </section>
         
     </main>
